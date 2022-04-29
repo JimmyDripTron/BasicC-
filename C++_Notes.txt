@@ -1,0 +1,107 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    //Variables
+
+    int page;                        // whole number
+    int AltAge;
+    int CharacterAge;
+    float height;                   // decimal point
+    double Account;                    // multiple decimal points (specific)
+    char grade;                        // 1 character
+    string phrase1;                    // whole sentence/ series of characters
+    string CharacterName;
+    string AltName;
+    bool ismale;                    // true or false value
+
+            
+                                            
+                                                                                        
+    //Variable Details
+
+    CharacterName = "Pickle Rick";
+                   //012345678910
+    CharacterAge = 70;
+    AltAge = 46;
+    height = 5.10;
+    AltName = "Silly Billy";
+    Account = 536.45;
+    page = 5;
+    grade = 'F';
+    phrase1 = "play video games.";
+    ismale = true;
+
+
+
+//    End lines with "\n"; within apostophie \
+    End lines with endl; outside of apostrophie
+
+//    cout << CharacterName.length() << endl; \
+    will tell you how man characters are in the string
+
+
+
+
+
+
+    //String Functions
+
+            // Sub String Selects Part of String. It's start/ how many characters are defined in the Peramiters \
+               we can actually create that as its own variable if we wanted by doing:
+
+            string CharacterSubName;
+            CharacterSubName = CharacterName.substr(7, 4);
+//            And
+            string AltSubName;
+            AltSubName = AltName.substr(6, 5);
+
+
+            CharacterName[0] = 'B';        // changes one character in pre-made string vairable
+            cout << "Search String Location: ";
+            cout << CharacterName.find("Rick", 2) << endl;    // Finds Start Position for searched Character after number listed (0 for start)
+            cout << "String Located... \n";
+            cout << "String Defined As: " << CharacterName.substr(7, 4) << endl;
+                                        // OR CharacterSubName
+            cout << ".\n.\n.\n.\n.\n";
+
+    //Numbers And Math
+                cout << "Numbers And Math:\n";
+                cout << 5 << endl; // Displays single number
+                cout << 5 - 7 << endl; // Simple Subtraction
+                cout << 5 / 2 << endl; // Simple Division
+                cout << "5+7= " << 5 + 7 << endl; // Addition
+                cout << "5x7= " << 5 * 7 << endl; // Multiplication
+//        Modulus Operator (AKA: %) will find the remainder of a divided number:
+//        (cout << 10 % 3)
+                cout << "10/3= " << 10/3 << " with a remainder of " << 10 % 3 << endl;
+//        Dont Forget B.E.D.M.A.S!
+                cout << (4 + 5) * 10 << endl; // Brackets Done First
+                cout << 4 + 5 * 10 << endl; // Multiplication Done First
+                cout << ".\n.\n.\n.\n";
+
+//                page++;         Adds 1 to int variable listed \
+                page--;         Subtracts 1 from int variable \
+                page += 35;     Adds 35 to int variable
+                page += 35;
+                cout << page << endl;
+                cout << 5.5 + 9 << endl;
+                cout << 10 / 3 << endl; // integers only create ineger answers
+                cout << 10.0 / 3.0 << endl; // doubles create decimal answers
+                 
+
+            cout << ".\n.\n.\n.\n";
+    //Test Lines
+
+            cout << CharacterAge << " year old " << CharacterName << " likes to " << phrase1 << endl;
+            cout << " Enter Phrase" << CharacterSubName << " Enter Phrase " << Account << " Enter Phrase " << endl;
+            cout << " Enter Phrase " << AltSubName << " Enter Phrase " << endl;
+            cout << " Enter Phrase " << AltName << endl;
+
+    
+         return 0;
+
+	}
